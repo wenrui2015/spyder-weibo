@@ -8,20 +8,10 @@ Created on Mon Jun  4 09:43:48 2018
 import json
 import requests
 from lxml import etree
+from http_util import get_url
+from get_urllist import get_tianya
 import re  
 
-def get_url(url):
-    '''
-    this function get xpath selector,timeout=3s
-    '''
-    try:
-        response=requests.get(url, cookies=None, headers=None,timeout=3)
-        html=response.content 
-        selector = etree.HTML(html)
-        return selector
-    except Exception as e:
-        print("response.status_code not correct")
-        print(url,e)
 def get_metainfo_ofpage(url,huifu_num=2,iswenda=True):
     '''
     this function get the meta info of a subuject detail page including 
