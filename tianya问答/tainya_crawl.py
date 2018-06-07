@@ -277,7 +277,7 @@ def run_spider(detail_f):
         print(e,"详情页:","http://bbs.tianya.cn"+url_list[i])
 #特殊的页面bug:#http://bbs.tianya.cn/post-907-24984-3-1.shtml#204824#  
 def main():
-    detail_f="E:/spyer_pro/crawl_data/detail_url.txt"
+    detail_f="./detail_url.txt"
     run_spider(detail_f)
 
 if __name__ == "__main__":
