@@ -187,7 +187,9 @@ def parse_pagetext(line,f_out):
     parse_block(block_line,title,f_out)
     
 
-#该网址必须有效      
+#该网址必须有效   
+#该函数用于解析天涯问答精品板块页面，由于精品板块网页结构不同，所以重写了解析函数
+#这里暂时没有用到
 def get_singleurl_detail(url,f_out):
     '''
     this function is the main function which concate one "jingping" object detail page 
