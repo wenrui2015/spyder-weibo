@@ -11,6 +11,7 @@ import time
 import pickle
 import requests
 from lxml import etree
+from conf import PHANTOM_JS_PATH,COOKIES_SAVE_PATH,account_id,account_password,user_id,url_login 
 
 def is_number(s):
     try:
@@ -251,12 +252,7 @@ def run_spyder():
                     print('all weibo content and comments saved into {}'.format(weibo_comments_save_path))
             f.writelines('F\n')
     
-PHANTOM_JS_PATH='E:/spyer_pro/crawl_data/phantomjs-2.1.1-windows/bin/phantomjs.exe'
-COOKIES_SAVE_PATH='./cookies.pkl'
-account_id="18874074194"
-account_password="suibe415"
-user_id="6341745629"                                #user you want to scrawl
-url_login="https://passport.weibo.cn/signin/login"   #微博登录网址   
+
 def main():
     run_spyder()
 
