@@ -16,7 +16,7 @@
 5、对于微博数据，采用ip池和账号池、随机延时等策略尽量避免反爬机制<br>
 6、对于微博数据，使用phantomJs+selenium获取登录cookie,避免手动抓取cookie<br>
 
-详细使用说明见README.pdf
+详细使用说明见readme.pdf
 如需以上各种数据，请联系：1174950106@qq.com
                            
   
